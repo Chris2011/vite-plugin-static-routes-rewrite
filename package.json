@@ -1,0 +1,41 @@
+{
+  "name": "vite-plugin-static-routes-rewrite",
+  "version": "1.0.0",
+  "description": "URL route rewriting when using vite as a static site generator while developing",
+  "main": "./dist/vite-plugin-static-routes-rewrite.js",
+  "module": "./dist/vite-plugin-static-routes-rewrite.js",
+  "types": "./dist/src/vite-plugin-static-routes-rewrite.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "author": "Chrizzly",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris2011/vite-plugin-static-routes-rewrite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chris2011/vite-plugin-static-routes-rewrite/issues"
+  },
+  "homepage": "https://github.com/Chris2011/vite-plugin-static-routes-rewrite#readme",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "static",
+    "router",
+    "rewrite"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "unit": "vitest --run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@vitest/coverage-v8": "2.1.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.3",
+    "vitest": "^2.1.2"
+  }
+}
