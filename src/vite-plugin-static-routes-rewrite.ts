@@ -1,5 +1,5 @@
 import type { ViteDevServer } from "vite";
-import PluginOptions from "./types";
+import PluginOptions from "./types.ts";
 
 export default (options: PluginOptions) => {
   return {
@@ -23,7 +23,7 @@ export default (options: PluginOptions) => {
         if (matchedRoute) {
           // Wenn es eine Regex-basierte Route ist, können wir den Zielpfad dynamisch anpassen
           if (matchedRoute.from instanceof RegExp) {
-            req.url = req.originalUrl.replace(matchedRoute.from, matchedRoute.to);
+            req.url = (req?.originalUrl || '').replace(matchedRoute.from, matchedRoute.to);
           } else {
             req.url = matchedRoute.to;
           }
