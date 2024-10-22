@@ -4,7 +4,7 @@
   "description": "URL route rewriting when using vite as a static site generator while developing",
   "main": "./dist/vite-plugin-static-routes-rewrite.js",
   "module": "./dist/vite-plugin-static-routes-rewrite.js",
-  "types": "./dist/src/vite-plugin-static-routes-rewrite.d.ts",
+  "types": "./dist/vite-plugin-static-routes-rewrite.d.ts",
   "type": "module",
   "files": [
     "dist"
